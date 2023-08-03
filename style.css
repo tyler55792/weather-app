@@ -3,17 +3,17 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Noto Sans', sans-serif;
+    color: white;
 }
-
-/* TODO: set min window width */
 
 body {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-image: url(./background.jpg);
+    background-image: url(./background2.jpg);
     background-size: cover;
+    min-height: 500px;
 }
 
 .header {
@@ -26,16 +26,41 @@ body {
     padding-left: 30px;
 }
 
+.inputArea {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    color: red;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+span.show {
+    opacity: 1;
+}
+
+
 input {
     padding: 7px;
     border-radius: 7px;
     border: 1px solid black;
+    text-decoration: none;
+    background-color: rgba(255,255,255, 0.2);
+}
+
+input::placeholder {
+    color: #fff;
 }
 
 .main {
     display: flex;
     justify-content: left;
-    padding-top: calc(15vh);
+    padding-top: calc(5vh);
     padding-left: 10%;
 }
 
@@ -47,6 +72,7 @@ input {
 .top {
     width: 100%;
     font-size: 40px;
+    font-weight: 600;
 }
 
 .bottom { 
@@ -55,6 +81,7 @@ input {
 
 .left {
     font-size: 100px;
+    font-weight: 900;
     padding-right: 35px;
 }
 
@@ -64,11 +91,12 @@ input {
 
 .right {
     font-size: 15px;
-    margin-top: 25px;
+    font-weight: 700;
+    margin-top: 30px;
 }
 
 .right sup {
-    font-size: 8px;
+    font-size: 9px;
 }
 
 .right > * {
@@ -77,4 +105,6 @@ input {
 
 .condition {
     font-size: 18px;
+    font-weight: 400;
+    padding-left: 2px;
 }

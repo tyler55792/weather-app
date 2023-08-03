@@ -8,17 +8,20 @@
 </head>
 <body>
     <div class="header">
-        <input type="text" placeholder="Enter City">
+        <div class="inputArea">
+            <input type="text" placeholder="Enter City">
+            <span>No matching location found</span>
+        </div>
     </div>
     <div class="main">
         <div class="weatherDisplay">
-            <div class="condition">Sunny</div>
-            <div class="top">LONDON, UNITED KINGDOM</div>
-            <div class="left bottom">68<sup>°F</sup></div>
-            <div class="right bottom">
-                <div>FEELS LIKE: 68<sup>°F</sup></div>
-                <div>WIND: 8 MPH</div>
-                <div>UV INDEX: 3</div>
+            <div class="condition" id="condition">Sunny</div>
+            <div class="top" id="location">LONDON, UNITED KINGDOM</div>
+            <div class="left bottom" id="temp">68<sup>°F</sup></div>
+            <div class="right bottom" id="extra">
+                <div id="feelsLike">FEELS LIKE: 68<sup>°F</sup></div>
+                <div id="wind">WIND: 8 MPH</div>
+                <div id="uv">UV INDEX: 3</div>
             </div>
         </div>
     </div>
